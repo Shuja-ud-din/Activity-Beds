@@ -2,7 +2,7 @@
 
 import { SailboatIcon as Boat, Car } from "lucide-react";
 import { Badge } from "../components/ui/badge";
-import { Avatar } from "../components/ui/avatar";
+import badge from "../assets/icons/Badge.png";
 import type { Booking } from "../types/booking";
 import { cn } from "../lib/utils";
 
@@ -92,11 +92,7 @@ export function BookingTable({ bookings, isLoading }: BookingTableProps) {
               )}
             >
               <td className="p-3">
-                <Avatar
-                  className={`h-8 w-8 rounded-full bg-${booking.avatarColor}-600 text-white`}
-                >
-                  <span className="text-xs">{booking.avatarText}</span>
-                </Avatar>
+                <img src={badge} />
               </td>
               <td className="p-3">
                 <div>

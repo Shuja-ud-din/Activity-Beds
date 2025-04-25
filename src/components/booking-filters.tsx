@@ -104,7 +104,7 @@ export function BookingFilters({
         Apply
       </Button>
 
-      <Button variant="outline" className="border-gray-700 gap-2">
+      <Button variant="outline" className="border-gray-700 gap-2 bg-[#2a2a2a]">
         <Filter className="h-4 w-4" />
         Filters
       </Button>
