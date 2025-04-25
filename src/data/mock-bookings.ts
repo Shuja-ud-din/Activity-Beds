@@ -1,4 +1,4 @@
-import type { Booking } from "@/types/booking"
+import type { Booking } from "../types/booking";
 
 export const mockBookings: Booking[] = [
   {
@@ -220,6 +220,7 @@ export const mockBookings: Booking[] = [
   // Add more bookings to reach 60 total
   ...Array(50)
     .fill(0)
+    // @ts-ignore
     .map((_, i) => ({
       avatarText: Math.random() > 0.5 ? "M" : "A",
       avatarColor: Math.random() > 0.5 ? "blue" : "purple",
@@ -234,8 +235,10 @@ export const mockBookings: Booking[] = [
       leadPaxName: "Rahul Sharma",
       paxDetails: "2A, 2C (4yrs, 8yrs)",
       productType: Math.random() > 0.5 ? "boat" : "car",
-      status: ["Confirmed", "Cancelled", "Vouchered", "Travelled"][Math.floor(Math.random() * 4)],
+      status: ["Confirmed", "Cancelled", "Vouchered", "Travelled"][
+        Math.floor(Math.random() * 4)
+      ],
       productCity: "Melbourne",
       airlineInfo: "Air India IGI",
     })),
-]
+];
