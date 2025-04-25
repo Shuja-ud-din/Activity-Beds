@@ -1,4 +1,4 @@
-import { Plus, Search } from "lucide-react";
+import { Plus } from "lucide-react";
 import { Button } from "./ui/button";
 import createBooking from "../assets/icons/create-booking.png";
 
